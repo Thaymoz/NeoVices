@@ -16,6 +16,8 @@ bullet_scene = ExtResource("2_ofj6p")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 modulate = Color(0.360784, 0.964706, 0.290196, 1)
+rotation = 1.5708
+scale = Vector2(0.8, 1.2)
 texture = ExtResource("1_wenrh")
 
 [node name="Collision" type="CollisionShape2D" parent="."]

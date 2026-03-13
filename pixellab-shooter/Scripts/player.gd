@@ -19,6 +19,7 @@ var knowcback_decay : float = 800
 var knockback_force : float = 250
 
 @onready var collision: CollisionShape2D = $hitbox/collision
+@onready var sprite: Sprite2D = $Sprite
 
 
 var powerups = {
@@ -39,6 +40,7 @@ func _process(_delta: float) -> void:
 	global_position.y = clamp(global_position.y,margin, viewport_size.y - margin)
 
 func _physics_process(delta: float) -> void:
+	
 	if knowback_velocity.length() > 1:
 		velocity = knowback_velocity
 		knowback_velocity = knowback_velocity.move_toward(Vector2.ZERO, knowcback_decay * delta)
@@ -49,7 +51,7 @@ func _physics_process(delta: float) -> void:
 	var mouse_dir = get_global_mouse_position() - global_position
 	if Input.is_action_pressed("shoot") and can_shoot == true:
 		_shoot(mouse_dir)
-	
+	look_at(get_global_mouse_position())
 	
 	move_and_slide()
 
@@ -64,6 +66,8 @@ func _shoot(direction):
 	
 	if powerups["mega_shoot"]:
 		bullet_instance.scale *= 3
+		bullet_instance.damage = 2
+		
 	await get_tree().create_timer(cd_shoot).timeout
 	can_shoot = true
 
@@ -79,8 +83,10 @@ func apply_powerup(type : String):
 			cd_shoot = 0.3
 		"mega_shoot":
 			powerups["mega_shoot"] = true
+			
 			await get_tree().create_timer(3).timeout
 			powerups["mega_shoot"] = false
+			
 		"freze_enemies":
 			powerups["freze_enemies"] = true
 			Global.freze_enemies.emit(5.0)
