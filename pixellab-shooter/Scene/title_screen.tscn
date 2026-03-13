@@ -1,23 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://61slb6pjx36u"]
+[gd_scene load_steps=5 format=3 uid="uid://61slb6pjx36u"]
 
 [ext_resource type="Texture2D" uid="uid://dnf3h51chc7tq" path="res://Assets/Group 11.png" id="1_axahy"]
 [ext_resource type="Script" uid="uid://bravc34ai835k" path="res://Scripts/title_screen.gd" id="1_btslf"]
 [ext_resource type="FontFile" uid="uid://b4gjafnoomsr5" path="res://Fonts/wheaton_capitals.otf" id="2_up4ea"]
-[ext_resource type="StyleBox" uid="uid://b7lf34y17ktch" path="res://themes/hover_style.tres" id="3_axahy"]
-[ext_resource type="StyleBox" uid="uid://d0be78rm6ortq" path="res://themes/focusStyle.tres" id="3_btslf"]
-[ext_resource type="StyleBox" uid="uid://cq4tux01jee80" path="res://themes/normalStyle.tres" id="4_btslf"]
-
-[sub_resource type="Theme" id="Theme_14imv"]
-Button/colors/font_color = Color(0, 0, 0, 1)
-Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
-Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
-Button/colors/font_pressed_color = Color(1, 1, 1, 1)
-Button/font_sizes/font_size = 40
-Button/fonts/font = ExtResource("2_up4ea")
-Button/styles/focus = ExtResource("3_btslf")
-Button/styles/hover = ExtResource("3_axahy")
-Button/styles/normal = ExtResource("4_btslf")
-Button/styles/pressed = ExtResource("3_btslf")
+[ext_resource type="Theme" uid="uid://dxdorj7svfful" path="res://themes/deflaut_theme.tres" id="3_up4ea"]
 
 [node name="title_screen" type="Control"]
 layout_mode = 3
@@ -54,12 +40,12 @@ theme_override_constants/separation = 50
 
 [node name="BtnStart" type="Button" parent="MarginContainer/MenuButtons"]
 layout_mode = 2
-theme = SubResource("Theme_14imv")
+theme = ExtResource("3_up4ea")
 text = "START GAME"
 
 [node name="BtnQuit" type="Button" parent="MarginContainer/MenuButtons"]
 layout_mode = 2
-theme = SubResource("Theme_14imv")
+theme = ExtResource("3_up4ea")
 text = "QUIT"
 
 [node name="MenuButtons2" type="VBoxContainer" parent="MarginContainer"]

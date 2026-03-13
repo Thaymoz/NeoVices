@@ -11,6 +11,11 @@ extends Node2D
 @onready var score_txt: Label = %ScoreTxt
 @onready var player_health: ProgressBar = %player_health
 
+@onready var main_hud: MarginContainer = $HUD/main_hud
+@onready var gameover: MarginContainer = $HUD/gameover
+@onready var actual_score: Label = %actual_score
+@onready var high_score: Label = %high_score
+
 
 @export var enemy_scene : PackedScene
 @export var spawn_margin := 200  
@@ -38,13 +43,15 @@ var is_spawning := false
 
 
 func _ready() -> void:
+	Global.score = 0
 	spawn_wave()
 	wave_txt.text = "WAVES: %d" % current_wave
 	score_txt.text = "SCORE:" + str("%02d" % Global.score)
 	player_health.value = player.max_health
 	player_health.max_value = player.max_health
 	Global.score_update.connect(update_score_txt)
-
+	
+	player.player_died.connect(game_over)
 
 func spawn_enemy():
 #ele verifica os tipos de inimigos que devem ser utilizados com base em cada wave
@@ -172,3 +179,22 @@ func random_spawn_powerup():
 
 func _on_powerup_spawn_times_timeout() -> void:
 	random_spawn_powerup()
+
+
+func game_over():
+	set_physics_process(false)
+	get_tree().paused = true
+	main_hud.hide()
+	gameover.show()
+	actual_score.text = "SCORE:" + str("%02d" % Global.score)
+	high_score.text = "HIGHSCORE:" + str("%02d" % Global.high_score)
+
+
+func _on_restar_btn_pressed() -> void:
+	get_tree().paused = false
+	get_tree().reload_current_scene()
+
+
+func _on_menu_btn_pressed() -> void:
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://Scene/title_screen.tscn")

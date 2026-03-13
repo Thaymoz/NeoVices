@@ -1,6 +1,8 @@
 extends CharacterBody2D
 class_name Player
 
+signal player_died
+
 @export var bullet_scene : PackedScene
 var can_shoot : bool = true
 var cd_shoot : float = 0.4
@@ -87,13 +89,12 @@ func apply_powerup(type : String):
 			
 func take_damage(amount : int, source_position : Vector2):
 	if current_health <= 0:
-		CameraEffects.start_shake(7.0)
+		CameraEffects.start_shake(10.0)
 		visible = false
 		collision.call_deferred("set", "disabled", false)
 		set_physics_process(false)
-		
-		await get_tree().create_timer(3).timeout
-		get_tree().change_scene_to_file("res://Scene/title_screen.tscn")
+		await get_tree().create_timer(1).timeout
+		emit_signal("player_died")
 	else:
 		current_health -= amount
 		current_health = clamp(current_health, 0, max_health)

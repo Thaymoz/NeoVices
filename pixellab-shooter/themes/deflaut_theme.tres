@@ -1,0 +1,18 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://dxdorj7svfful"]
+
+[ext_resource type="FontFile" uid="uid://b4gjafnoomsr5" path="res://Fonts/wheaton_capitals.otf" id="1_qbc5h"]
+[ext_resource type="StyleBox" uid="uid://d0be78rm6ortq" path="res://themes/focusStyle.tres" id="2_enjec"]
+[ext_resource type="StyleBox" uid="uid://b7lf34y17ktch" path="res://themes/hover_style.tres" id="3_i0542"]
+[ext_resource type="StyleBox" uid="uid://cq4tux01jee80" path="res://themes/normalStyle.tres" id="4_flxoj"]
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("1_qbc5h")
+Button/styles/focus = ExtResource("2_enjec")
+Button/styles/hover = ExtResource("3_i0542")
+Button/styles/normal = ExtResource("4_flxoj")
+Button/styles/pressed = ExtResource("2_enjec")
