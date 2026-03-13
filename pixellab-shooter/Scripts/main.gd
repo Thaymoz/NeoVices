@@ -30,7 +30,7 @@ var power_ups_scenes : Dictionary = {
 }
 
 var current_wave := 1
-var enemies_per_wave := 3
+var enemies_per_wave := 7
 var time_betwen_enemies := 0.3
 var time_betwen_waves := 1.2
 var is_spawning := false

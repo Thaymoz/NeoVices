@@ -110,251 +110,115 @@ value = 50.0
 show_percentage = false
 
 [node name="powerup_spawn_times" type="Timer" parent="."]
-wait_time = 12.0
+wait_time = 10.0
 autostart = true
 
 [node name="Node2D" type="Node2D" parent="."]
-visible = false
-modulate = Color(1, 1, 1, 0.427451)
+modulate = Color(1, 1, 1, 0.301961)
 z_index = -5
 
-[node name="Star10" type="Sprite2D" parent="Node2D"]
-position = Vector2(675, 770)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star11" type="Sprite2D" parent="Node2D"]
-position = Vector2(899, 874)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star12" type="Sprite2D" parent="Node2D"]
-position = Vector2(1039.5, 762.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star13" type="Sprite2D" parent="Node2D"]
-position = Vector2(1263.5, 866.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star14" type="Sprite2D" parent="Node2D"]
-position = Vector2(679.5, 566)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star15" type="Sprite2D" parent="Node2D"]
-position = Vector2(903.5, 670)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star16" type="Sprite2D" parent="Node2D"]
-position = Vector2(1044, 558.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star17" type="Sprite2D" parent="Node2D"]
-position = Vector2(1268, 662.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star18" type="Sprite2D" parent="Node2D"]
-position = Vector2(123.5, 838)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star19" type="Sprite2D" parent="Node2D"]
-position = Vector2(347.5, 942)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star20" type="Sprite2D" parent="Node2D"]
-position = Vector2(488, 830.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star21" type="Sprite2D" parent="Node2D"]
-position = Vector2(712, 934.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star22" type="Sprite2D" parent="Node2D"]
-position = Vector2(128, 634)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star23" type="Sprite2D" parent="Node2D"]
-position = Vector2(352, 738)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star24" type="Sprite2D" parent="Node2D"]
-position = Vector2(492.5, 626.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star25" type="Sprite2D" parent="Node2D"]
-position = Vector2(716.5, 730.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star43" type="Sprite2D" parent="Node2D"]
-position = Vector2(1159.5, 814)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star44" type="Sprite2D" parent="Node2D"]
-position = Vector2(1383.5, 918)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star45" type="Sprite2D" parent="Node2D"]
-position = Vector2(1524, 806.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star47" type="Sprite2D" parent="Node2D"]
-position = Vector2(1748, 910.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star48" type="Sprite2D" parent="Node2D"]
-position = Vector2(1388, 714)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star49" type="Sprite2D" parent="Node2D"]
-position = Vector2(1752.5, 706.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star58" type="Sprite2D" parent="Node2D"]
-position = Vector2(1196.5, 978.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star59" type="Sprite2D" parent="Node2D"]
-position = Vector2(1201, 774.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
 [node name="Star26" type="Sprite2D" parent="Node2D"]
-position = Vector2(659, 322)
+position = Vector2(134.5, 785)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star27" type="Sprite2D" parent="Node2D"]
-position = Vector2(883, 426)
+position = Vector2(358.5, 889)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star28" type="Sprite2D" parent="Node2D"]
-position = Vector2(1023.5, 314.5)
+position = Vector2(499, 777.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star29" type="Sprite2D" parent="Node2D"]
-position = Vector2(1247.5, 418.5)
+position = Vector2(723, 881.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star30" type="Sprite2D" parent="Node2D"]
-position = Vector2(663.5, 118)
+position = Vector2(1653.93, 604.618)
+rotation = -2.22242
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star31" type="Sprite2D" parent="Node2D"]
-position = Vector2(887.5, 222)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star32" type="Sprite2D" parent="Node2D"]
-position = Vector2(1028, 110.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star33" type="Sprite2D" parent="Node2D"]
-position = Vector2(1252, 214.5)
+position = Vector2(1877.93, 708.618)
+rotation = -2.22242
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star34" type="Sprite2D" parent="Node2D"]
-position = Vector2(107.5, 390)
+position = Vector2(1097.93, 876.618)
+rotation = -2.22242
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star35" type="Sprite2D" parent="Node2D"]
-position = Vector2(331.5, 494)
+position = Vector2(1321.93, 980.618)
+rotation = -2.22242
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star36" type="Sprite2D" parent="Node2D"]
-position = Vector2(472, 382.5)
+position = Vector2(1462.43, 869.118)
+rotation = -2.22242
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star37" type="Sprite2D" parent="Node2D"]
-position = Vector2(696, 486.5)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star38" type="Sprite2D" parent="Node2D"]
-position = Vector2(112, 186)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_3amdw")
-
-[node name="Star39" type="Sprite2D" parent="Node2D"]
-position = Vector2(336, 290)
+position = Vector2(274.5, 418)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star40" type="Sprite2D" parent="Node2D"]
-position = Vector2(476.5, 178.5)
+position = Vector2(55, 110)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star41" type="Sprite2D" parent="Node2D"]
-position = Vector2(700.5, 282.5)
+position = Vector2(279, 214)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star42" type="Sprite2D" parent="Node2D"]
-position = Vector2(1723, 310)
+position = Vector2(1301.5, 241.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star46" type="Sprite2D" parent="Node2D"]
-position = Vector2(1727.5, 106)
+position = Vector2(1306, 37.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star50" type="Sprite2D" parent="Node2D"]
-position = Vector2(1171.5, 378)
+position = Vector2(750, 309.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star51" type="Sprite2D" parent="Node2D"]
-position = Vector2(1395.5, 482)
+position = Vector2(1027, 417.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star52" type="Sprite2D" parent="Node2D"]
-position = Vector2(1536, 370.5)
+position = Vector2(1167.5, 306)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star53" type="Sprite2D" parent="Node2D"]
-position = Vector2(1760, 474.5)
+position = Vector2(1391.5, 410)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star54" type="Sprite2D" parent="Node2D"]
-position = Vector2(1176, 174)
+position = Vector2(807.5, 109.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
 [node name="Star55" type="Sprite2D" parent="Node2D"]
-position = Vector2(1400, 278)
+position = Vector2(1031.5, 213.5)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_3amdw")
 
